@@ -1,0 +1,236 @@
+.carousel {
+    position: relative;
+    height: auto;
+    width: 100%;
+    .carousel-indicators{
+        bottom: 15px !important;
+    }
+    .carousel-inner{
+        position: relative;
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+    }
+    .banner_p{
+        position: relative;
+    }
+    .item_banner01{
+        width: 600px;
+        margin: 0 auto;
+        position: absolute;
+        top: 52%;
+        left: 20%;
+        color: #fff;
+}
+a{
+    width: 100%;
+}
+.banner_p img{
+    width: 100%;
+    display: block;
+    height: 440px;
+}
+.carousel-control.left{
+    background: url(../images/left1.png) no-repeat;
+}
+.carousel-control.right{
+    background: url(../images/right1.png) no-repeat;
+}
+.carousel-control{
+    top: 40% !important;
+    width: 3.5%;
+}
+}
+@media screen and(max-width:800px)
+{
+    .carousel{
+        .carousel-control{
+            width: 6%;
+        }
+    }
+}
+
+@media screen and(max-width:470px)
+{
+    .carousel{
+        .carousel-control{
+            width: 10%;
+        }
+    }
+}
+
+
+// team
+.team{
+    width: 100%;
+    background-color: blue;
+    border: 1px;
+    position: relative;
+    margin-top: -0.2%;
+   .container{
+       width: 90%;
+       margin: auto;
+       padding: 1% 0;
+
+       .list{
+            width: 85%;
+            float: left;
+            margin-left: 3%;
+            overflow: hidden;
+            .list1{
+                span{
+                    font-size: 1.5vw;
+                }
+            }
+           a{
+               line-height: 2.5;
+               color: #fff;
+           }
+       }
+   }
+    .news{
+        width: 10%;
+        float: left;
+        padding-left: 1%;
+        position: relative;
+        padding-top: 0.8%;
+        img{
+            position: relative;
+            left: 10%;
+            width: 100%;
+        }
+        .info{
+            width: 100%;
+            a{
+                position: absolute;
+                left:27%;
+                line-height: 0;
+                top: 59%;
+                font-size: 16px;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:1000px){
+    .team{
+        margin-top: -0.3%;
+        .container{
+            .list{
+                width: 55%;
+                margin-left: 5%;
+                .list1{
+                    span{
+                        font-size: 2vw;
+                    }
+                }
+            }
+        }
+        .news{
+            width: 14%;
+        }
+    }
+}
+
+@media screen and (max-width:700px){
+    .team{
+        margin-top: -0.5%;
+        .container{
+            .list{
+                .list1{
+                    span{
+                        font-size: 2.5vw;
+                    }
+                }
+            }
+        }
+        .news{
+            width: 20%;
+            .info{
+                a{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:470px){
+    .team{
+        margin-top: -0.9%;
+        .container{
+            .list{
+                width: 60%;
+                .list1{
+                    span{
+                        font-size: 3.5vw;
+                    }
+                }
+            }
+        }
+        .news{
+            width: 23%;
+            .info{
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+
+// word
+
+.word{
+    padding: 2em 0em 0em;
+    .container{
+        width: 100%;
+        margin: 0;
+        padding:0;
+    }
+    .wos{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        .line{
+            width: 32%;
+            background: #ededed;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+            .text{
+                width: 80%;
+                text-align: left;
+                margin: 0 auto;
+                padding-top: 1em;
+                h3{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    img:hover{
+        transform:scale(1.1);
+        transition:all linear .4s;
+    }
+}
+
+@media screen and (max-width:700px){
+    .word{
+        .wos{
+            flex-wrap: wrap;
+            .line{
+                width: 100%;
+                .text{
+                    padding: 2em 0;
+                }
+            }
+        }
+    }
+}
+
